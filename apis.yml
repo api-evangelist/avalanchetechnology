@@ -1,23 +1,51 @@
 aid: avalanchetechnology
+
 name: Avalanchetechnology
-description: 'Avalanchetechnology is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Avalanchetechnology is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling. No public website could be located for this entity despite extensive web searches, suggesting the company may not maintain an external web presence or uses a domain not directly associated with its name. The lack of a discoverable online presence limits the ability to verify API offerings, documentation, or support channels, and highlights the need for further investigation or direct contact to confirm any available services.'
+
 url: https://raw.githubusercontent.com/api-evangelist/avalanchetechnology/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Technology
+- API
+- Data
+- Cloud
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/avalanchetechnology-hosts.yml
+- type: Vendors
+  url: vendors/avalanchetechnology-vendors.yml
+- type: DomainSecurity
+  url: security/avalanchetechnology-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/avalanchetechnology
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
